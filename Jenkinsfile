@@ -9,6 +9,11 @@ pipeline {
         git url: 'https://github.com/KaranamManoj/java-maven-junit-helloworld.git'
       }
     }
+    stage('Building'){
+      steps {
+        sh "mvn clean install"
+      }
+    }
   }
 }
   
