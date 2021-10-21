@@ -1,6 +1,11 @@
 pipeline {
   agent any
   stages {
+    stage('Cloning Repository'){
+      steps {
+        sh "git url:"
+      }
+    }
     stage('Checkout'){
       steps {
         sh "mvn checkout"
