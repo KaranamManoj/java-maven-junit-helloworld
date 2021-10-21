@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Unit Tests'){
       steps {
-        sh "mvn tests"
+        sh "mvn test"
       }
     }
     stage('SonarQube Analysis'){
